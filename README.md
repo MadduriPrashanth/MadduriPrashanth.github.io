@@ -1,1 +1,1 @@
-# madduriprashanth.github.io
+# MadduriPrashanth.github.io
