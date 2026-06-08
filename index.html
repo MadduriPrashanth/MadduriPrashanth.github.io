@@ -69,44 +69,50 @@
       color: white !important;
     }
 
-    /* Skills Progress Bar - Dark Grey Background */
-    .progress {
-      margin-bottom: 18px;
-    }
+    /* Skills Section */
+.skills-content .progress {
+  margin-bottom: 35px;
+  /* Reset Bootstrap's flex behavior on .progress */
+  display: block !important;
+  height: auto !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
 
-    .progress .skill {
-      display: block !important;
-      margin-bottom: 8px !important;
-      font-weight: 700 !important;
-      font-size: 14px;
-      color: #555;
-      overflow: auto;
-    }
+.skills-content .progress .skill {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 
-    .progress .skill .val {
-      float: right !important;
-      color: #555 !important;
-      font-weight: 700 !important;
-      font-size: 14px !important;
-      white-space: nowrap !important;
-    }
+.skills-content .progress .skill .val {
+  font-style: normal;
+  font-weight: 700;
+  color: #6c757d;
+}
 
-    .progress-bar-wrap {
-      width: 100% !important;
-      background-color: #e8e8e8 !important;
-      border-radius: 0px;
-      overflow: hidden;
-      height: 10px;
-      margin-top: 0;
-      clear: both;
-    }
+.skills-content .progress-bar-wrap {
+  width: 100%;
+  height: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
-    .progress-bar {
-      background-color: #4a4a4a !important;
-      height: 100%;
-      transition: width 0.3s ease;
-      border-radius: 0px;
-    }
+.skills-content .progress-bar {
+  height: 10px;
+  background: #6c757d;
+  border-radius: 5px;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
   </style>
 
   <!-- =======================================================
@@ -198,87 +204,88 @@
 
     </section><!-- /About Section -->
 
-    <!-- Skills Section -->
-<section id="skills" class="skills section">
+       <section id="skills" class="skills section light-background">
 
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Skills</h2>
-    <p>My technical expertise and professional capabilities.</p>
-  </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>I have expertise in Business Analysis, Data Analytics, Dashboard Development, Agile Delivery, and Digital Transformation. Skilled in SQL, Python, Power BI, Advanced Excel, Jira, Confluence, MS Visio, and Lucidchart, I specialize in translating complex business requirements into data-driven solutions, optimizing processes, and delivering measurable business value.
+        </p>
+      </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="row gy-4">
+        <div class="row skills-content skills-animation">
 
-      <div class="col-lg-6">
+          <div class="col-lg-6">
 
-        <div class="progress">
-          <span class="skill">Advanced Excel <i class="val">95%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:95%"></div>
+            <div class="progress">
+              <span class="skill"><span>Advanced Excel</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>SQL</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Power BI</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Python </span> <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
           </div>
-        </div>
 
-        <div class="progress mt-4">
-          <span class="skill">SQL <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:90%"></div>
-          </div>
-        </div>
+          <div class="col-lg-6">
 
-        <div class="progress mt-4">
-          <span class="skill">Power BI <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:85%"></div>
-          </div>
-        </div>
+            <div class="progress">
+              <span class="skill"><span>Jira </span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
 
-        <div class="progress mt-4">
-          <span class="skill">Python <i class="val">65%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:65%"></div>
+            <div class="progress">
+              <span class="skill"><span>Confluence</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>MS Visio</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Lucidchart</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
           </div>
+
         </div>
 
       </div>
 
-      <div class="col-lg-6">
-
-        <div class="progress">
-          <span class="skill">JIRA <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:90%"></div>
-          </div>
-        </div>
-
-        <div class="progress mt-4">
-          <span class="skill">Confluence <i class="val">90%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:90%"></div>
-          </div>
-        </div>
-
-        <div class="progress mt-4">
-          <span class="skill">MS Visio <i class="val">85%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:85%"></div>
-          </div>
-        </div>
-
-        <div class="progress mt-4">
-          <span class="skill">LucidChart <i class="val">75%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" style="width:75%"></div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+    </section>
 <!-- End Skills Section -->
 
 <!-- Resume Section -->
@@ -359,179 +366,212 @@
     
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+    <section id="portfolio" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Explore some of my dashboarding projects showcasing data analysis, KPI reporting, and business insights using Microsoft Excel.</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <!-- Filter Tabs -->
+        <ul class="portfolio-filters-custom d-flex justify-content-center mb-4" data-aos="fade-up">
+          <li class="filter-btn active" data-filter="all" onclick="portfolioFilter(this, 'all')">ALL</li>
+          <li class="filter-btn" data-filter="excel" onclick="portfolioFilter(this, 'excel')">EXCEL DASHBOARDS</li>
+        </ul>
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+        <!-- Portfolio Grid -->
+        <div class="row gy-4" id="portfolio-grid">
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          <div class="col-lg-6 col-md-6 portfolio-item" data-category="excel" data-aos="fade-up">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrap">
+                <img src="assets/img/portfolio/dashboard-1.jpg" class="img-fluid" alt="Call Centre Dashboard">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <h4>Call Centre Dashboard</h4>
+                    <p>KPI tracking & performance metrics for call centre operations using Advanced Excel.</p>
+                    <a href="assets/img/portfolio/dashboard-1.jpg" title="Call Centre Dashboard" data-gallery="portfolio-excel" class="glightbox overlay-btn"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Excel Dashboard</span>
+                <h5>Call Centre Dashboard</h5>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          <div class="col-lg-6 col-md-6 portfolio-item" data-category="excel" data-aos="fade-up" data-aos-delay="100">
+            <div class="portfolio-card">
+              <div class="portfolio-img-wrap">
+                <img src="assets/img/portfolio/dashboard-2.jpg" class="img-fluid" alt="HR Analytics Dashboard">
+                <div class="portfolio-overlay">
+                  <div class="portfolio-overlay-content">
+                    <h4>HR Analytics Dashboard</h4>
+                    <p>Employee data insights, attrition analysis, and workforce KPIs built in Advanced Excel.</p>
+                    <a href="assets/img/portfolio/dashboard-2.jpg" title="HR Analytics Dashboard" data-gallery="portfolio-excel" class="glightbox overlay-btn"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                  </div>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
+              <div class="portfolio-meta">
+                <span class="portfolio-tag">Excel Dashboard</span>
+                <h5>HR Analytics Dashboard</h5>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+          </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
+        </div><!-- End Portfolio Grid -->
 
       </div>
 
     </section><!-- /Portfolio Section -->
+
+    <style>
+      /* Portfolio custom styles */
+      .portfolio-filters-custom {
+        list-style: none;
+        padding: 0;
+        gap: 30px;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 12px;
+      }
+
+      .portfolio-filters-custom .filter-btn {
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #888;
+        padding-bottom: 12px;
+        margin-bottom: -14px;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      .portfolio-filters-custom .filter-btn.active,
+      .portfolio-filters-custom .filter-btn:hover {
+        color: #149ddd;
+        border-bottom: 3px solid #149ddd;
+      }
+
+      .portfolio-card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        background: #fff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .portfolio-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      }
+
+      .portfolio-img-wrap {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .portfolio-img-wrap img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+      }
+
+      .portfolio-card:hover .portfolio-img-wrap img {
+        transform: scale(1.05);
+      }
+
+      .portfolio-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(20, 157, 221, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .portfolio-card:hover .portfolio-overlay {
+        opacity: 1;
+      }
+
+      .portfolio-overlay-content {
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+      }
+
+      .portfolio-overlay-content h4 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .portfolio-overlay-content p {
+        font-size: 13px;
+        margin-bottom: 16px;
+        opacity: 0.9;
+      }
+
+      .overlay-btn {
+        display: inline-block;
+        padding: 8px 20px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        color: #fff !important;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s ease;
+      }
+
+      .overlay-btn:hover {
+        background: #fff;
+        color: #149ddd !important;
+      }
+
+      .portfolio-meta {
+        padding: 16px 20px;
+      }
+
+      .portfolio-tag {
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #149ddd;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .portfolio-meta h5 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #222;
+        margin: 0;
+      }
+    </style>
+
+    <script>
+      function portfolioFilter(el, filter) {
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        el.classList.add('active');
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+    </script>
 
     
 
@@ -539,25 +579,7 @@
 
   </main>
 
-  <footer id="footer" class="footer light-background">
-    <div class="container">
-      <h3 class="sitename">Prashanth Reddy</h3>
-      <p>Business Analyst | Data Analysis Expert | Banking Domain Specialist</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://linkedin.com/in/prashanth-reddy-madduri-87794318b" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com" title="GitHub"><i class="bi bi-github"></i></a>
-        <a href="mailto:prashanthmadduri456@gmail.com" title="Email"><i class="bi bi-envelope"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>© Copyright 2024</span> <strong class="px-1 sitename">Prashanth Reddy</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <p>Hyderabad, India | +91 800-861-1215 | prashanthmadduri456@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -577,6 +599,25 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Set progress bar widths from aria-valuenow
+    document.addEventListener('DOMContentLoaded', function () {
+      const bars = document.querySelectorAll('.skills-content .progress-bar');
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const bar = entry.target;
+            const val = bar.getAttribute('aria-valuenow');
+            if (val) bar.style.width = val + '%';
+            observer.unobserve(bar);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      bars.forEach(bar => observer.observe(bar));
+    });
+  </script>
 
 </body>
 
