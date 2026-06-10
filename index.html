@@ -113,6 +113,134 @@
   width: 0;
   transition: width 1s ease-in-out;
 }
+
+    /* Portfolio custom styles */
+    .portfolio-filters-custom {
+      list-style: none;
+      padding: 0;
+      gap: 30px;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 12px;
+    }
+
+    .portfolio-filters-custom .filter-btn {
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #888;
+      padding-bottom: 12px;
+      margin-bottom: -14px;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-filters-custom .filter-btn.active,
+    .portfolio-filters-custom .filter-btn:hover {
+      color: #149ddd;
+      border-bottom: 3px solid #149ddd;
+    }
+
+    .portfolio-card {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      background: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+    .portfolio-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio-img-wrap img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .portfolio-card:hover .portfolio-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .portfolio-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(20, 157, 221, 0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .portfolio-card:hover .portfolio-overlay {
+      opacity: 1;
+    }
+
+    .portfolio-overlay-content {
+      text-align: center;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .portfolio-overlay-content h4 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-overlay-content p {
+      font-size: 13px;
+      margin-bottom: 16px;
+      opacity: 0.9;
+    }
+
+    .overlay-btn {
+      display: inline-block;
+      padding: 8px 20px;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      color: #fff !important;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .overlay-btn:hover {
+      background: #fff;
+      color: #149ddd !important;
+    }
+
+    .portfolio-meta {
+      padding: 16px 20px;
+    }
+
+    .portfolio-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #149ddd;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .portfolio-meta h5 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #222;
+      margin: 0;
+    }
   </style>
 
   <!-- =======================================================
@@ -361,17 +489,13 @@
 </section>
 <!-- End Resume Section -->
 
-    
-
-    
-
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Explore some of my dashboarding projects showcasing data analysis, KPI reporting, and business insights using Microsoft Excel.</p>
+        <p>Explore my interactive Excel dashboards showcasing data analysis, KPI reporting, and business insights. These projects demonstrate expertise in Excel, Power Query, and data visualization for strategic decision-making.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -388,18 +512,18 @@
           <div class="col-lg-6 col-md-6 portfolio-item" data-category="excel" data-aos="fade-up">
             <div class="portfolio-card">
               <div class="portfolio-img-wrap">
-                <img src="assets/img/portfolio/dashboard-1.jpg" class="img-fluid" alt="Call Centre Dashboard">
+                <img src="assets/img/portfolio/Sales1.JPG" class="img-fluid" alt="Sales Performance Analysis Dashboard">
                 <div class="portfolio-overlay">
                   <div class="portfolio-overlay-content">
-                    <h4>Call Centre Dashboard</h4>
-                    <p>KPI tracking & performance metrics for call centre operations using Advanced Excel.</p>
-                    <a href="assets/img/portfolio/dashboard-1.jpg" title="Call Centre Dashboard" data-gallery="portfolio-excel" class="glightbox overlay-btn"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                    <h4>Sales Performance Analysis Dashboard</h4>
+                    <p>Interactive Excel dashboard analyzing sales performance, profitability, product trends, and regional performance using Power Query and Pivot Tables.</p>
+                    <a href="https://github.com/MadduriPrashanth/Sales-Performance-Analysis-Dashboard" target="_blank" class="overlay-btn"><i class="bi bi-github me-1"></i> View on GitHub</a>
                   </div>
                 </div>
               </div>
               <div class="portfolio-meta">
                 <span class="portfolio-tag">Excel Dashboard</span>
-                <h5>Call Centre Dashboard</h5>
+                <h5>Sales Performance Analysis</h5>
               </div>
             </div>
           </div><!-- End Portfolio Item -->
@@ -407,18 +531,18 @@
           <div class="col-lg-6 col-md-6 portfolio-item" data-category="excel" data-aos="fade-up" data-aos-delay="100">
             <div class="portfolio-card">
               <div class="portfolio-img-wrap">
-                <img src="assets/img/portfolio/dashboard-2.jpg" class="img-fluid" alt="HR Analytics Dashboard">
+                <img src="assets/img/portfolio/workforce.png" class="img-fluid" alt="Workforce Insights Dashboard">
                 <div class="portfolio-overlay">
                   <div class="portfolio-overlay-content">
-                    <h4>HR Analytics Dashboard</h4>
-                    <p>Employee data insights, attrition analysis, and workforce KPIs built in Advanced Excel.</p>
-                    <a href="assets/img/portfolio/dashboard-2.jpg" title="HR Analytics Dashboard" data-gallery="portfolio-excel" class="glightbox overlay-btn"><i class="bi bi-zoom-in me-1"></i> Preview</a>
+                    <h4>Workforce Insights Dashboard</h4>
+                    <p>Interactive Excel dashboard analyzing employee demographics, workforce distribution, tenure, employment status, and organizational trends using Power Query.</p>
+                    <a href="https://github.com/MadduriPrashanth/Workforce-Insights-Dashboard" target="_blank" class="overlay-btn"><i class="bi bi-github me-1"></i> View on GitHub</a>
                   </div>
                 </div>
               </div>
               <div class="portfolio-meta">
                 <span class="portfolio-tag">Excel Dashboard</span>
-                <h5>HR Analytics Dashboard</h5>
+                <h5>Workforce Insights</h5>
               </div>
             </div>
           </div><!-- End Portfolio Item -->
@@ -428,152 +552,6 @@
       </div>
 
     </section><!-- /Portfolio Section -->
-
-    <style>
-      /* Portfolio custom styles */
-      .portfolio-filters-custom {
-        list-style: none;
-        padding: 0;
-        gap: 30px;
-        border-bottom: 2px solid #e0e0e0;
-        padding-bottom: 12px;
-      }
-
-      .portfolio-filters-custom .filter-btn {
-        cursor: pointer;
-        font-size: 13px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #888;
-        padding-bottom: 12px;
-        margin-bottom: -14px;
-        border-bottom: 3px solid transparent;
-        transition: all 0.3s ease;
-      }
-
-      .portfolio-filters-custom .filter-btn.active,
-      .portfolio-filters-custom .filter-btn:hover {
-        color: #149ddd;
-        border-bottom: 3px solid #149ddd;
-      }
-
-      .portfolio-card {
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        background: #fff;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .portfolio-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-      }
-
-      .portfolio-img-wrap {
-        position: relative;
-        overflow: hidden;
-      }
-
-      .portfolio-img-wrap img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        display: block;
-        transition: transform 0.4s ease;
-      }
-
-      .portfolio-card:hover .portfolio-img-wrap img {
-        transform: scale(1.05);
-      }
-
-      .portfolio-overlay {
-        position: absolute;
-        inset: 0;
-        background: rgba(20, 157, 221, 0.85);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
-      .portfolio-card:hover .portfolio-overlay {
-        opacity: 1;
-      }
-
-      .portfolio-overlay-content {
-        text-align: center;
-        color: #fff;
-        padding: 20px;
-      }
-
-      .portfolio-overlay-content h4 {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-
-      .portfolio-overlay-content p {
-        font-size: 13px;
-        margin-bottom: 16px;
-        opacity: 0.9;
-      }
-
-      .overlay-btn {
-        display: inline-block;
-        padding: 8px 20px;
-        border: 2px solid #fff;
-        border-radius: 25px;
-        color: #fff !important;
-        font-size: 13px;
-        font-weight: 600;
-        text-decoration: none;
-        transition: background 0.3s ease;
-      }
-
-      .overlay-btn:hover {
-        background: #fff;
-        color: #149ddd !important;
-      }
-
-      .portfolio-meta {
-        padding: 16px 20px;
-      }
-
-      .portfolio-tag {
-        font-size: 11px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #149ddd;
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      .portfolio-meta h5 {
-        font-size: 16px;
-        font-weight: 700;
-        color: #222;
-        margin: 0;
-      }
-    </style>
-
-    <script>
-      function portfolioFilter(el, filter) {
-        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-        el.classList.add('active');
-        document.querySelectorAll('.portfolio-item').forEach(item => {
-          if (filter === 'all' || item.dataset.category === filter) {
-            item.style.display = '';
-          } else {
-            item.style.display = 'none';
-          }
-        });
-      }
-    </script>
-
-    
 
    
 
@@ -601,6 +579,19 @@
   <script src="assets/js/main.js"></script>
 
   <script>
+    // Portfolio filter function
+    function portfolioFilter(el, filter) {
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      el.classList.add('active');
+      document.querySelectorAll('.portfolio-item').forEach(item => {
+        if (filter === 'all' || item.dataset.category === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
     // Set progress bar widths from aria-valuenow
     document.addEventListener('DOMContentLoaded', function () {
       const bars = document.querySelectorAll('.skills-content .progress-bar');
