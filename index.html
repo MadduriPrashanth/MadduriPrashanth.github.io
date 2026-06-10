@@ -69,49 +69,48 @@
     }
 
     /* Skills Section */
-.skills-content .progress {
-  margin-bottom: 35px;
-  /* Reset Bootstrap's flex behavior on .progress */
-  display: block !important;
-  height: auto !important;
-  background: transparent !important;
-  border-radius: 0 !important;
-  overflow: visible !important;
-}
+    .skills-content .progress {
+      margin-bottom: 35px;
+      display: block !important;
+      height: auto !important;
+      background: transparent !important;
+      border-radius: 0 !important;
+      overflow: visible !important;
+    }
 
-.skills-content .progress .skill {
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-  font-size: 15px;
-  font-weight: 600;
-  color: #222;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
+    .skills-content .progress .skill {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #222;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
 
-.skills-content .progress .skill .val {
-  font-style: normal;
-  font-weight: 700;
-  color: #6c757d;
-}
+    .skills-content .progress .skill .val {
+      font-style: normal;
+      font-weight: 700;
+      color: #6c757d;
+    }
 
-.skills-content .progress-bar-wrap {
-  width: 100%;
-  height: 10px;
-  background: #e0e0e0;
-  border-radius: 5px;
-  overflow: hidden;
-}
+    .skills-content .progress-bar-wrap {
+      width: 100%;
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
 
-.skills-content .progress-bar {
-  height: 10px;
-  background: #6c757d;
-  border-radius: 5px;
-  width: 0;
-  transition: width 1s ease-in-out;
-}
+    .skills-content .progress-bar {
+      height: 10px;
+      background: #6c757d;
+      border-radius: 5px;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
 
     /* Portfolio custom styles */
     .portfolio-filters-custom {
@@ -136,8 +135,8 @@
 
     .portfolio-filters-custom .filter-btn.active,
     .portfolio-filters-custom .filter-btn:hover {
-      color: #149ddd;
-      border-bottom: 3px solid #149ddd;
+      color: #6c757d;
+      border-bottom: 3px solid #6c757d;
     }
 
     .portfolio-card {
@@ -173,7 +172,7 @@
     .portfolio-overlay {
       position: absolute;
       inset: 0;
-      background: rgba(20, 157, 221, 0.85);
+      background: rgba(108, 117, 125, 0.85);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -217,7 +216,7 @@
 
     .overlay-btn:hover {
       background: #fff;
-      color: #149ddd !important;
+      color: #6c757d !important;
     }
 
     .portfolio-meta {
@@ -229,7 +228,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 1px;
-      color: #149ddd;
+      color: #6c757d;
       display: block;
       margin-bottom: 5px;
     }
@@ -257,21 +256,19 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1 class="sitename"></h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="#hero" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#resume">Resume</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-  </ul>
-  <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
     </div>
   </header>
@@ -287,7 +284,6 @@
         <h2>Prashanth Reddy<br></h2>
         <p>I'm a <span class="typed" data-typed-items="Business Analyst, Product Manager, Data Analyst">Business Analyst</span></p>
         <div class="social-links">
-          
           <a href="https://github.com/MadduriPrashanth" target="_blank">
             <i class="bi bi-github"></i></a>
           <a href="https://www.linkedin.com/in/prashanth-reddy-madduri" target="_blank">
@@ -300,11 +296,9 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -331,14 +325,13 @@
 
     </section><!-- /About Section -->
 
-       <section id="skills" class="skills section light-background">
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>I have expertise in Business Analysis, Data Analytics, Dashboard Development, Agile Delivery, and Digital Transformation. Skilled in SQL, Python, Power BI, Advanced Excel, Jira, Confluence, MS Visio, and Lucidchart, I specialize in translating complex business requirements into data-driven solutions, optimizing processes, and delivering measurable business value.
-        </p>
-      </div><!-- End Section Title -->
+        <p>I have expertise in Business Analysis, Data Analytics, Dashboard Development, Agile Delivery, and Digital Transformation. Skilled in SQL, Python, Power BI, Advanced Excel, Jira, Confluence, MS Visio, and Lucidchart, I specialize in translating complex business requirements into data-driven solutions, optimizing processes, and delivering measurable business value.</p>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -351,60 +344,60 @@
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>SQL</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>Power BI</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
-              <span class="skill"><span>Python </span> <i class="val">65%</i></span>
+              <span class="skill"><span>Python</span> <i class="val">65%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
           </div>
 
           <div class="col-lg-6">
 
             <div class="progress">
-              <span class="skill"><span>Jira </span> <i class="val">90%</i></span>
+              <span class="skill"><span>Jira</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>Confluence</span> <i class="val">90%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>MS Visio</span> <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
             <div class="progress">
               <span class="skill"><span>Lucidchart</span> <i class="val">75%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
-            </div><!-- End Skills Item -->
+            </div>
 
           </div>
 
@@ -412,90 +405,87 @@
 
       </div>
 
-    </section>
-<!-- End Skills Section -->
+    </section><!-- End Skills Section -->
 
-<!-- Resume Section -->
-<section id="resume" class="resume section">
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
 
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Resume</h2>
-    <p>My education and professional experience.</p>
-  </div>
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>My education and professional experience.</p>
+      </div>
 
-  <div class="container">
+      <div class="container">
 
-    <div class="row">
+        <div class="row">
 
-      <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-6" data-aos="fade-up">
 
-        <h3 class="resume-title">Education</h3>
+            <h3 class="resume-title">Education</h3>
 
-        <div class="resume-item">
-          <h4>B.Tech in Mechanical Engineering</h4>
-          <h5>2017 - 2021</h5>
-          <p><em>Vellore Institute of Technology (VIT), Vellore, Tamil Nadu</em></p>
-          <p>CGPA: 8.79</p>
-        </div>
+            <div class="resume-item">
+              <h4>B.Tech in Mechanical Engineering</h4>
+              <h5>2017 - 2021</h5>
+              <p><em>Vellore Institute of Technology (VIT), Vellore, Tamil Nadu</em></p>
+              <p>CGPA: 8.79</p>
+            </div>
 
-        <div class="resume-item">
-          <h4>Certifications</h4>
-          <ul>
-            <li>Statistical Data Analytics for Business Research (VITOL)</li>
-            <li>Java Programming (Duke University, Coursera)</li>
-            <li>Advanced Excel (Udemy)</li>
-          </ul>
+            <div class="resume-item">
+              <h4>Certifications</h4>
+              <ul>
+                <li>Statistical Data Analytics for Business Research (VITOL)</li>
+                <li>Java Programming (Duke University, Coursera)</li>
+                <li>Advanced Excel (Udemy)</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <h3 class="resume-title">Professional Experience</h3>
+
+            <div class="resume-item">
+              <h4>Business Analyst</h4>
+              <h5>Feb 2022 - Present</h5>
+              <p><em>ICICI Bank, Hyderabad, Telangana</em></p>
+              <ul>
+                <li>Managed critical banking analytics platforms (OFSAA, OBIEE) ensuring system stability for regulatory and analytical reporting.</li>
+                <li>Designed and implemented data quality framework for 7 upstream sources, reducing inconsistencies by 20%.</li>
+                <li>Optimized pipeline monitoring reducing data issue discovery time by 83% (from 6 hours to 1 hour).</li>
+                <li>Automated large-scale data workflows, reducing processing time by 75% and saving ~100 person-hours daily.</li>
+                <li>Developed 100+ OBIEE reports and dashboards used by 80+ business users for regulatory reporting.</li>
+                <li>Automated report distribution using Linux shell scripting, saving 20 person-hours daily.</li>
+                <li>Managed ETL pipelines and regulatory modules (LCR, ALM) ensuring accurate T+1 submissions.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Associate Software Engineer</h4>
+              <h5>Aug 2021 - Feb 2022</h5>
+              <p><em>Bosch Global Software Technologies, Bangalore</em></p>
+              <ul>
+                <li>Conducted static stress analysis on intermediate shafts and e-axle components using Ansys, improving simulation accuracy by 15%.</li>
+                <li>Simulated and evaluated performance and durability of automotive components.</li>
+                <li>Collaborated with cross-domain teams to enhance design efficiency.</li>
+              </ul>
+            </div>
+
+          </div>
+
         </div>
 
       </div>
 
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-        <h3 class="resume-title">Professional Experience</h3>
-
-        <div class="resume-item">
-          <h4>Business Analyst</h4>
-          <h5>Feb 2022 - Present</h5>
-          <p><em>ICICI Bank, Hyderabad, Telangana</em></p>
-          <ul>
-            <li>Managed critical banking analytics platforms (OFSAA, OBIEE) ensuring system stability for regulatory and analytical reporting.</li>
-            <li>Designed and implemented data quality framework for 7 upstream sources, reducing inconsistencies by 20%.</li>
-            <li>Optimized pipeline monitoring reducing data issue discovery time by 83% (from 6 hours to 1 hour).</li>
-            <li>Automated large-scale data workflows, reducing processing time by 75% and saving ~100 person-hours daily.</li>
-            <li>Developed 100+ OBIEE reports and dashboards used by 80+ business users for regulatory reporting.</li>
-            <li>Automated report distribution using Linux shell scripting, saving 20 person-hours daily.</li>
-            <li>Managed ETL pipelines and regulatory modules (LCR, ALM) ensuring accurate T+1 submissions.</li>
-          </ul>
-        </div>
-
-        <div class="resume-item">
-          <h4>Associate Software Engineer</h4>
-          <h5>Aug 2021 - Feb 2022</h5>
-          <p><em>Bosch Global Software Technologies, Bangalore</em></p>
-          <ul>
-            <li>Conducted static stress analysis on intermediate shafts and e-axle components using Ansys, improving simulation accuracy by 15%.</li>
-            <li>Simulated and evaluated performance and durability of automotive components.</li>
-            <li>Collaborated with cross-domain teams to enhance design efficiency.</li>
-          </ul>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- End Resume Section -->
+    </section><!-- End Resume Section -->
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Explore my interactive Excel dashboards showcasing data analysis, KPI reporting, and business insights. These projects demonstrate expertise in Excel, Power Query, and data visualization for strategic decision-making.</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -525,7 +515,7 @@
                 <h5>Sales Performance Analysis</h5>
               </div>
             </div>
-          </div><!-- End Portfolio Item -->
+          </div>
 
           <div class="col-lg-6 col-md-6 portfolio-item" data-category="excel" data-aos="fade-up" data-aos-delay="100">
             <div class="portfolio-card">
@@ -544,7 +534,7 @@
                 <h5>Workforce Insights</h5>
               </div>
             </div>
-          </div><!-- End Portfolio Item -->
+          </div>
 
         </div><!-- End Portfolio Grid -->
 
@@ -552,11 +542,7 @@
 
     </section><!-- /Portfolio Section -->
 
-   
-
   </main>
-
-
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
